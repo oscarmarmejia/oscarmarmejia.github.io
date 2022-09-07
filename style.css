@@ -26,6 +26,19 @@ html {
   background: #555;
 }
 
+.button2 {
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}
+
+
 /* all similar content styling codes */
 section {
   padding: 100px 0;
@@ -38,7 +51,7 @@ section {
 .about,
 .services,
 .skills,
-.teams,
+.projects,
 .contact,
 footer {
   font-family: "Poppins", sans-serif;
@@ -46,6 +59,7 @@ footer {
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
+.projects .projects-content,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -71,16 +85,16 @@ section .title::before {
   background: #111;
   transform: translateX(-50%);
 }
-section .title::after {
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  font-size: 20px;
-  color: DarkGreen;
-  padding: 0 5px;
-  background: #fff;
-  transform: translateX(-50%);
-}
+    section .title::after {
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        font-size: 20px;
+        color: burlywood;
+        padding: 0 5px;
+        background: #fff;
+        transform: translateX(-50%);
+    }
 
 /* navbar styling */
 .navbar {
@@ -91,10 +105,10 @@ section .title::after {
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
-.navbar.sticky {
-  padding: 15px 0;
-  background: DarkGreen;
-}
+    .navbar.sticky {
+        padding: 15px 0;
+        background: burlywood;
+    }
 .navbar .max-width {
   display: flex;
   align-items: center;
@@ -105,10 +119,10 @@ section .title::after {
   font-size: 35px;
   font-weight: 600;
 }
-.navbar .logo a span {
-  color: DarkGreen;
-  transition: all 0.3s ease;
-}
+    .navbar .logo a span {
+        color: burlywood;
+        transition: all 0.3s ease;
+    }
 .navbar.sticky .logo a span {
   color: #fff;
 }
@@ -124,12 +138,12 @@ section .title::after {
   margin-left: 25px;
   transition: color 0.3s ease;
 }
-.navbar .menu li a:hover {
-  color: DarkGreen;
-}
-.navbar.sticky .menu li a:hover {
-  color: #fff;
-}
+    .navbar .menu li a:hover {
+        color:  white ;
+    }
+    .navbar.sticky .menu li a:hover {
+        color: chocolate;
+    }
 
 /* menu btn styling */
 .menu-btn {
@@ -139,23 +153,24 @@ section .title::after {
   display: none;
 }
 .scroll-up-btn {
-  position: fixed;
-  height: 45px;
-  width: 42px;
-  background: DarkGreen;
-  right: 30px;
-  bottom: 10px;
-  text-align: center;
-  line-height: 45px;
-  color: #fff;
-  z-index: 9999;
-  font-size: 30px;
-  border-radius: 6px;
-  border-bottom-width: 2px;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: chocolate;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    border: 2px solid chocolate;
 }
 .scroll-up-btn.show {
   bottom: 30px;
@@ -169,9 +184,9 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("hubble.jpg") no-repeat center;
+  background: url("fall2.jpg") no-repeat center;
   height: 100vh;
-  color: rgb(7, 48, 109);
+  color: #FFF;
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
@@ -198,30 +213,29 @@ section .title::after {
   font-weight: 600;
   margin: 5px 0;
 }
-.home .home-content .text-3 span {
-  color: DarkGreen;
-  font-weight: 500;
-}
-.home .home-content a {
-  display: inline-block;
-  background: DarkGreen;
-  color: #fff;
-  font-size: 25px;
-  padding: 12px 36px;
-  margin-top: 20px;
-  font-weight: 400;
-  border-radius: 6px;
-  border: 2px solid DarkGreen;
-  transition: all 0.3s ease;
-}
-.home .home-content a:hover {
-  color: DarkGreen;
-  background: none;
-}
+    .home .home-content .text-3 span {
+        color: blue;
+        font-weight: 500;
+    }
+    .home .home-content a {
+        display: inline-block;
+        background: blue;
+        color: #fff;
+        font-size: 25px;
+        padding: 12px 36px;
+        margin-top: 20px;
+        font-weight: 400;
+        border-radius: 6px;
+        border: 2px solid DarkGreen;
+        transition: all 0.3s ease;
+    }
+        .home .home-content a:hover {
+            color: blue;
+            background: none;
+        }
 
 /* about section styling */
 .about .title::after {
-  content: "who i am";
 }
 .about .about-content .left {
   width: 45%;
@@ -239,29 +253,31 @@ section .title::after {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
+
 }
-.about .about-content .right .text span {
-  color: DarkGreen;
-}
+    .about .about-content .right .text span {
+        color: burlywood;
+    }
 .about .about-content .right p {
   text-align: justify;
 }
-.about .about-content .right a {
-  display: inline-block;
-  background: DarkGreen;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 10px 30px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 2px solid DarkGreen;
-  transition: all 0.3s ease;
-}
-.about .about-content .right a:hover {
-  color: DarkGreen;
-  background: none;
-}
+    .about .about-content .right a {
+        display: inline-block;
+        background: chocolate;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px 30px;
+        margin-top: 20px;
+        border-radius: 6px;
+        border: 2px solid chocolate;
+        transition: all 0.3s ease;
+    }
+        .about .about-content .right a:hover {
+            color: chocolate;
+            transform: scale(1.05);
+            background: none;
+        }
 
 /* services section styling */
 .services,
@@ -287,20 +303,20 @@ section .title::after {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.services .serv-content .card:hover {
-  background: DarkGreen;
-}
+    .services .serv-content .card:hover {
+        background: chocolate;
+    }
 .services .serv-content .card .box {
   transition: all 0.3s ease;
 }
 .services .serv-content .card:hover .box {
   transform: scale(1.05);
 }
-.services .serv-content .card i {
-  font-size: 50px;
-  color: DarkGreen;
-  transition: color 0.3s ease;
-}
+    .services .serv-content .card i {
+        font-size: 50px;
+        color: chocolate;
+        transition: color 0.3s ease;
+    }
 .services .serv-content .card:hover i {
   color: #fff;
 }
@@ -313,7 +329,7 @@ section .title::after {
 /* skills section styling */
 
 .skills .title::after {
-  content: "what i know";
+  
 }
 .skills .skills-content .column {
   width: calc(50% - 30px);
@@ -327,19 +343,19 @@ section .title::after {
   text-align: justify;
 }
 .skills .skills-content .left a {
-  display: inline-block;
-  background: DarkGreen;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 16px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 2px solid DarkGreen;
-  transition: all 0.3s ease;
+    display: inline-block;
+    background: chocolate;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid chocolate;
+    transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover {
-  color: DarkGreen;
+  color: chocolate;
   background: none;
 }
 .skills .skills-content .right .bars {
@@ -361,108 +377,151 @@ section .title::after {
   background: lightgrey;
   position: relative;
 }
-.skills .skills-content .right .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: DarkGreen;
-}
-.skills-content .right .python::before {
-  width: 70%;
-}
+    .skills .skills-content .right .line::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: chocolate;
+    }
 .skills-content .right .java::before {
-  width: 80%;
-}
-.skills-content .right .kotlin::before {
-  width: 30%;
-}
-.skills-content .right .react::before {
-  width: 60%;
-}
-.skills-content .right .javascript::before {
-  width: 80%;
-}
-.skills-content .right .css::before {
-  width: 80%;
-}
-.skills-content .right .verilog::before {
-  width: 80%;
-}
-.skills-content .right .mysql::before {
   width: 50%;
 }
-.skills-content .right .mysql::before {
+
+
+.skills-content .right .kotlin::before {
+    width: 20%;
+}
+
+.skills-content .right .phyton::before {
+    width: 50%;
+}
+
+.skills-content .right .js::before {
+    width: 40%;
+}
+
+.skills-content .right .css::before {
+  width: 60%;
+}
+.skills-content .right .html::before {
   width: 70%;
 }
 
-/* teams section styling */
-.teams .title::after {
-  content: "who with me";
+.skills-content .right .cplus::before {
+    width: 40%;
 }
-.teams .carousel .card {
-  background: #222;
-  border-radius: 6px;
-  padding: 25px 35px;
-  text-align: center;
-  overflow: hidden;
-  transition: all 0.3s ease;
+
+.skills-content .right .csharp::before {
+    width: 30%;
 }
-.teams .carousel .card:hover {
-  background: DarkGreen;
+
+.skills-content .right .verilog::before {
+    width: 60%;
 }
-.teams .carousel .card .box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
+.skills-content .right .vhdl::before {
+  width: 50%;
 }
-.teams .carousel .card:hover .box {
-  transform: scale(1.05);
+
+.skills-content .right .aws::before {
+    width: 20%;
 }
-.teams .carousel .card .text {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
+.skills-content .right .mysql::before {
+  width: 20%;
 }
-.teams .carousel .card img {
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid DarkGreen;
-  transition: all 0.3s ease;
+
+
+/* proyect section styling */
+.projects .title::after {
+
 }
-.teams .carousel .card:hover img {
-  border-color: #fff;
+
+.projects {
+    justify-content: center;
+   
+    flex-wrap: wrap;
+    
 }
-.owl-dots {
-  text-align: center;
-  margin-top: 20px;
+
+.card {
+    background: burlywood;
+    width: 400px;
+    height: 750px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 15px;
+ 
 }
-.owl-dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 5px;
-  outline: none !important;
-  border-radius: 50%;
-  border: 2px solid DarkGreen !important;
-  transition: all 0.3s ease;
+
+/*
+.card-image {
+    background-color: magenta;
+    height: 250px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
 }
-.owl-dot.active {
-  width: 35px;
-  border-radius: 14px;
+    .card-image:hover {
+        border-radius: 15px;
+        transition: all 0.3s ease;
+        transform: scale(1.05);
+    }
+
+    */
+  
+
+ 
+
+.project-2 {
+    background-image: url("tamalapp.png");
+    
 }
-.owl-dot.active,
-.owl-dot:hover {
-  background: DarkGreen !important;
+
+.project-3 {
+    background-image: url("globe.png");
 }
+
+.project-4 {
+    background-image: url("globe.png");
+}
+
+.card h2 {
+padding: 10px;
+
+}
+
+.card p {
+    padding: 10px;
+}
+
+
+.card a {
+    background-color: chocolate;
+    color: white;
+    border-radius: 15px;
+    padding: 20px 20px;
+    display: block;
+    transition: all 0.3s ease;
+    border: 2px solid chocolate;
+    text-align: center;
+    margin: 20px 50px;
+}
+    .card a:hover {
+        color: chocolate;
+        background-color: white;
+        transform: scale(1.05);
+        
+    }
+
+   
+
+
+
 
 /* contact section styling */
 .contact .title::after {
-  content: "get in touch";
+
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
@@ -486,10 +545,10 @@ section .title::after {
 .contact .contact-content .row .info {
   margin-left: 30px;
 }
-.contact .contact-content .row i {
-  font-size: 25px;
-  color: DarkGreen;
-}
+    .contact .contact-content .row i {
+        font-size: 25px;
+        color: chocolate;
+    }
 .contact .contact-content .info .head {
   font-weight: 500;
 }
@@ -537,30 +596,30 @@ section .title::after {
   align-items: center;
 }
 .right form .button-area button {
-  color: #fff;
-  display: block;
-  width: 160px !important;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  background: DarkGreen;
-  border: 2px solid DarkGreen;
-  transition: all 0.3s ease;
+    color: #fff;
+    display: block;
+    width: 160px !important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: chocolate;
+    border: 2px solid chocolate;
+    transition: all 0.3s ease;
 }
 .right form .button-area button:hover {
-  color: DarkGreen;
+  color: chocolate;
   background: none;
 }
 /* footer section styling */
 footer {
-  background: #111;
-  padding: 15px 23px;
-  color: #fff;
-  text-align: center;
+    background: burlywood;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
 }
 footer span a {
   color: DarkGreen;
@@ -591,17 +650,17 @@ footer span a:hover {
   .menu-btn i.active:before {
     content: "\f00d";
   }
-  .navbar .menu {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    top: 0;
-    background: #111;
-    text-align: center;
-    padding-top: 80px;
-    transition: all 0.3s ease;
-  }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: burlywood;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
   .navbar .menu.active {
     left: 0;
   }
@@ -695,4 +754,13 @@ footer span a:hover {
     font-size: 23px;
     line-height: 38px;
   }
+     .title2 {
+        position: relative;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        font-family: "Ubuntu", sans-serif;
+    }
 }
