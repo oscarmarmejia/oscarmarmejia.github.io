@@ -496,6 +496,11 @@ padding: 10px;
 }
 
 
+    .contact .contact-content .column .info2 {
+        font-size: 25px;
+    }
+
+
 .contact .contact-content .text {
     font-size: 20px;
     font-weight: 600;
@@ -518,11 +523,14 @@ padding: 10px;
     height: 30px;
     width: auto;
     flex-wrap: wrap;
-    align-items: center;
+   
+
  
 }
+
+
 .contact .contact-content .row .info {
-  margin-left: 15px;
+  font-size:20px;
 }
     .contact .contact-content .row i {
         font-size: 25px;
@@ -533,10 +541,12 @@ padding: 10px;
 .contact .contact-content .info .head {
   font-weight: 500;
 
+
 }
 .contact .contact-content .info .sub-title {
     color: #333;
-    font-size: 15px;
+    font-size: 30px;
+    text-align:center;
 }
 
 
