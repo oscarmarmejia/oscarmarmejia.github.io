@@ -71,7 +71,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: normal;
+        justify-content: space-around;
     }
 
 section .title {
@@ -450,7 +450,7 @@ section .title::before {
 }
 
 .project-4 {
-    background-image: url("test3.jpeg");
+    background-image: url("test3.png");
 }
 
 .card h2 {
@@ -500,14 +500,13 @@ padding: 10px;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-
-    
+    align-content: center;
     text-align:center;
     
 }
 .contact .contact-content  p {
   text-align: center;
- 
+  align-content:center
 }
 .contact .contact-content  .icons {
   margin: 10px 0;
@@ -528,7 +527,7 @@ padding: 10px;
     .contact .contact-content .row i {
         font-size: 25px;
         color: chocolate;
-        
+        padding:5px;
         
     }
 .contact .contact-content .info .head {
