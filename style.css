@@ -498,6 +498,8 @@ padding: 10px;
 
     .contact .contact-content .column .info2 {
         font-size: 25px;
+        align-content:center;
+        text-align:center;
     }
 
 
@@ -518,11 +520,15 @@ padding: 10px;
   padding:20px;
   padding-bottom:40px;
 }
+.contact .contact-content .contenedor{
+    
+
+}
 .contact .contact-content .row {
     display: flex;
     height: 30px;
     width: auto;
-    flex-wrap: wrap;
+    justify-content:space-between;
    
 
  
